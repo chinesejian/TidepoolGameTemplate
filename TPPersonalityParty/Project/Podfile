@@ -1,0 +1,24 @@
+platform :ios, '7.0'
+
+pod 'CrashlyticsFramework', :inhibit_warnings => true
+
+pod 'JASidePanels', :inhibit_warnings => true
+pod 'RQShineLabel', :git => 'https://github.com/zipme/RQShineLabel.git', :inhibit_warnings => true
+
+pod 'MSKit', :git=>'https://github.com/e7mac/MSKit'
+pod 'EasyDimensions', :git=>'https://github.com/ravikvss/EasyDimensions'
+pod 'AttributedMarkdown', :git=>'https://github.com/tidepool/AttributedMarkdown'
+pod 'APAddressBook'
+
+pod 'TPToolkit', :path=> "../../../TPToolkit/TPToolkit.podspec" 
+pod 'TPServiceFramework', :path=> "../../../TPServiceFramework/TPServiceFramework.podspec"
+pod 'TPGameFramework', :path=> "../../../TPGameFramework/TPGameFramework.podspec" 
+pod 'TPActivityFramework', :path=> "../../../TPActivityFramework/TPActivityFramework.podspec"
+
+pod 'TPCaseTheJoint', :git=>'git@github.com:tidepool/TPCaseTheJoint'
+
+pod 'TPPersonalityParty', :path=>'../TPPersonalityParty.podspec'
+
+target 'TPPersonalityPartyTests', :exclusive => true do
+  pod 'Kiwi/XCTest', '2.2.4'
+end

@@ -9,7 +9,7 @@
 #import "TP{{Project}}StageViewController.h"
 #import "TP{{Project}}Scene.h"
 
-static const NSUInteger kRoundPerLevel = 3;
+static const NSUInteger kRoundPerLevel = 1;
 
 @interface TP{{Project}}StageViewController () <TP{{Project}}SceneDelegate>
 
@@ -32,6 +32,7 @@ static const NSUInteger kRoundPerLevel = 3;
   if (super.paused != paused) {
     super.paused = paused;
     self.{{project}}Scene.paused = paused;
+    self.{{project}}Scene.view.paused = paused;
   }
 }
 
@@ -39,6 +40,7 @@ static const NSUInteger kRoundPerLevel = 3;
 {
   self.{{project}}Scene.paused = YES;
   self.{{project}}Scene.paused = self.paused;
+  self.{{project}}Scene.view.paused = self.paused;
 }
 
 - (void)viewWillLayoutSubviews

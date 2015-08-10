@@ -35,7 +35,7 @@ walk = (dir, done) ->
 exports.generate = (project) ->
   options =
     currentDate: today()
-    author: 'Rex Sheng'
+    author: 'Jason Huang'
     project: project[0].toLowerCase() + project[1..]
     Project: project[0].toUpperCase() + project[1..]
   

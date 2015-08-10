@@ -9,5 +9,5 @@ pod 'CrashlyticsFramework', '~> 2.2.0'
 pod 'TP{{Project}}', :path=>'../TP{{Project}}.podspec'
 
 target 'TP{{Project}}Tests', :exclusive => true do
-  pod 'Kiwi/XCTest'
+  pod 'Kiwi/XCTest', '2.2.4'
 end

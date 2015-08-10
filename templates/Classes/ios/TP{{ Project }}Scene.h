@@ -15,6 +15,7 @@
 - (void){{project}}SceneLose:(TP{{Project}}Scene *)scene;
 - (void){{project}}SceneWin:(TP{{Project}}Scene *)scene completion:(dispatch_block_t)completion;
 - (void)logEvent:(NSDictionary *)properties;
+- (void){{project}}Scene:(TP{{Project}}Scene *)scene didWinPoints:(int)points;
 
 @end
 

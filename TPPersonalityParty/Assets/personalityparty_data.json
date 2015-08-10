@@ -1,0 +1,1523 @@
+{
+  "0":{
+    "type":"MultiplePick",
+    "pickNum":4,
+    "class":"TPPrePartyQuestionViewController",
+    
+    "description":"Let's get ready for the party.\nFirst grab the 4 words that best describe you.",
+    "bg-image":"personalityparty.bundle/badnews-bg.jpg",
+    
+    "choices":[{
+               "text":"practical",
+               "results":[{
+                          "type":"increment",
+                          "key":"realistic",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"grounded",
+               "results":[{
+                          "type":"increment",
+                          "key":"realistic",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"realistic",
+               "results":[{
+                          "type":"increment",
+                          "key":"realistic",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"rational",
+               "results":[{
+                          "type":"increment",
+                          "key":"investigative",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"scientific",
+               "results":[{
+                          "type":"increment",
+                          "key":"investigative",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"intellectual",
+               "results":[{
+                          "type":"increment",
+                          "key":"investigative",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"free-spirited",
+               "results":[{
+                          "type":"increment",
+                          "key":"artistic",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"artsy",
+               "results":[{
+                          "type":"increment",
+                          "key":"artistic",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"independent",
+               "results":[{
+                          "type":"increment",
+                          "key":"artistic",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"helpful",
+               "results":[{
+                          "type":"increment",
+                          "key":"social",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"friendly",
+               "results":[{
+                          "type":"increment",
+                          "key":"social",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"trustworthy",
+               "results":[{
+                          "type":"increment",
+                          "key":"social",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"energetic",
+               "results":[{
+                          "type":"increment",
+                          "key":"enterprising",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"ambitious",
+               "results":[{
+                          "type":"increment",
+                          "key":"enterprising",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"sociable",
+               "results":[{
+                          "type":"increment",
+                          "key":"enterprising",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"orderly",
+               "results":[{
+                          "type":"increment",
+                          "key":"conventional",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"business-like",
+               "results":[{
+                          "type":"increment",
+                          "key":"conventional",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"efficient",
+               "results":[{
+                          "type":"increment",
+                          "key":"conventional",
+                          "value":1
+                          }]
+               }
+               ],
+    
+    "transitions":[{
+                   "key":"1"
+                   }]
+  },
+  "1":{
+    "type":"MultipleChoice",
+    "class":"TPSideMultipleChoiceQuestionViewController",
+    
+    "description":"On the way out the door you see that your favorite TV show is on. The host asked you to arrive precisely at 7:00pm. You decide to:",
+    "bg-image":"personalityparty.bundle/tvshow-bg.jpg",
+    
+    "choices":[{
+               "text":"Skip the show, it's important for you to be punctual.",
+               "results":[{
+                          "type":"increment",
+                          "key":"conscientiousness",
+                          "value":2
+                          }]
+               },
+               {
+               "text":"Figure it's ok to be a few minutes late and split the difference.",
+               "results":[{
+                          "type":"increment",
+                          "key":"conscientiousness",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"Watch the end of the show and then hurry over.",
+               "results":[{
+                          "type":"increment",
+                          "key":"conscientiousness",
+                          "value":-1
+                          }]
+               },
+               {
+               "text":"You're not worried about arriving late, at this point your friends expect it.",
+               "results":[{
+                          "type":"increment",
+                          "key":"conscientiousness",
+                          "value":-2
+                          }]
+               }
+               ],
+    
+    "transitions":[{
+                   "key":"2"
+                   }]
+  },
+  "2":{
+    "type":"MultipleChoice",
+    "class":"TPSideMultipleChoiceQuestionViewController",
+    
+    "description":"On your way to the party do you stop at the store to pick up a gift?",
+    "bg-image":"personalityparty.bundle/store-blur-bg.jpg",
+    
+    "choices":[{
+               "text":"No",
+               "results":[{
+                          "type":"increment",
+                          "key":"agreeableness",
+                          "value":-2
+                          }]
+               },
+               {
+               "text":"Yes, you easily remember your friend's favorite snack and bring that.",
+               "results":[{
+                          "type":"increment",
+                          "key":"agreeableness",
+                          "value":2
+                          }]
+               },
+               {
+               "text":"You, you pick up something nice that you think others will enjoy.",
+               "results":[{
+                          "type":"increment",
+                          "key":"agreeableness",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"Yes, you pick up something inexpensive and convenient.",
+               "results":[{
+                          "type":"increment",
+                          "key":"agreeableness",
+                          "value":-1
+                          }]
+               }
+               ],
+    
+    "transitions":[{
+                   "key":"3"
+                   }]
+  },
+  "3":{
+    "type":"MultipleChoice",
+    "class":"TPSideMultipleChoiceQuestionViewController",
+    
+    "description":"You've arrived at the party, where to?",
+    "bg-image":"personalityparty.bundle/arrived-bg.jpg",
+    
+    "choices":[{
+               "text":"Mysterious Strangers",
+               "results":[{
+                          "type":"increment",
+                          "key":"extraversion",
+                          "value":2
+                          },
+                          {
+                          "type":"set",
+                          "key":"branch1",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"Old Friend",
+               "results":[{
+                          "type":"increment",
+                          "key":"extraversion",
+                          "value":1
+                          },
+                          {
+                          "type":"set",
+                          "key":"branch1",
+                          "value":2
+                          }]
+               },
+               {
+               "text":"Balcony",
+               "results":[{
+                          "type":"increment",
+                          "key":"extraversion",
+                          "value":-2
+                          },
+                          {
+                          "type":"set",
+                          "key":"branch1",
+                          "value":3
+                          }]
+               },
+               {
+               "text":"Food",
+               "results":[{
+                          "type":"increment",
+                          "key":"extraversion",
+                          "value":-1
+                          },
+                          {
+                          "type":"set",
+                          "key":"branch1",
+                          "value":4
+                          }]
+               }
+               ],
+    
+    "transitions":[{
+                   "conditions":[{
+                                 "type":"comparison",
+                                 "operator":"==",
+                                 "key":"branch1",
+                                 "value":1
+                                 }],
+                   "key":"4-mystery"
+                   },
+                   {
+                   "conditions":[{
+                                 "type":"comparison",
+                                 "operator":"==",
+                                 "key":"branch1",
+                                 "value":2
+                                 }],
+                   "key":"4-friend"
+                   },
+                   {
+                   "conditions":[{
+                                 "type":"comparison",
+                                 "operator":"==",
+                                 "key":"branch1",
+                                 "value":3
+                                 }],
+                   "key":"4-balcony"
+                   },
+                   {
+                   "key":"food"
+                   }]
+  },
+  "food":{
+    "type":"MultipleChoice",
+    "class":"TPSideMultipleChoiceQuestionViewController",
+    
+    "description":"Which snack would you chooose?",
+    "bg-image":"personalityparty.bundle/food-bg.jpg",
+    
+    "choices":[{
+               "text":"Mysterious foreign food",
+               "results":[{
+                          "type":"increment",
+                          "key":"openness",
+                          "value":2
+                          }]
+               },
+               {
+               "text":"Something unusual made by the host",
+               "results":[{
+                          "type":"increment",
+                          "key":"openness",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"Maybe a spicy dip",
+               "results":[{
+                          "type":"increment",
+                          "key":"openness",
+                          "value":-1
+                          }]
+               },
+               {
+               "text":"Comfort food",
+               "results":[{
+                          "type":"increment",
+                          "key":"openness",
+                          "value":-2
+                          }]
+               }
+               ],
+    
+    "transitions":[{
+                   "key":"4-food"
+                   }]
+  },
+  "4-mystery":{
+    "type":"MultipleChoice",
+    "class":"TPSideMultipleChoiceQuestionViewController",
+    
+    "description":"One of the strangers is a friend of the host named Samantha. She reveals that she is a ventriloquist from Las Vegas. You are:",
+    "bg-image":"personalityparty.bundle/samantha1-blur-bg.jpg",
+    
+    "choices":[{
+               "text":"Fascinated and excited to ask lots of questions.",
+               "results":[{
+                          "type":"increment",
+                          "key":"openness",
+                          "value":2
+                          }]
+               },
+               {
+               "text":"Intrigued, you like meeting people with unusual careers.",
+               "results":[{
+                          "type":"increment",
+                          "key":"openness",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"Intrigued, but you figure you don’t have much in common with Samantha.",
+               "results":[{
+                          "type":"increment",
+                          "key":"openness",
+                          "value":-1
+                          }]
+               },
+               {
+               "text":"Wishing you could talk to someone you relate to more.",
+               "results":[{
+                          "type":"increment",
+                          "key":"openness",
+                          "value":-2
+                          }]
+               }
+               ],
+    
+    "transitions":[{
+                   "key":"5"
+                   }]
+  },
+  "4-friend":{
+    "type":"MultipleChoice",
+    "class":"TPSideMultipleChoiceQuestionViewController",
+    
+    "description":"As you are talking another party guest, named Samantha, comes in to join the conversation. She reveals that she is a ventriloquist from Las Vegas. You are:",
+    "bg-image":"personalityparty.bundle/samantha1-blur-bg.jpg",
+    
+    "choices":[{
+               "text":"Fascinated and excited to ask lots of questions.",
+               "results":[{
+                          "type":"increment",
+                          "key":"openness",
+                          "value":2
+                          }]
+               },
+               {
+               "text":"Intrigued, you like meeting people with unusual careers.",
+               "results":[{
+                          "type":"increment",
+                          "key":"openness",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"Intrigued, but you figure you don’t have much in common with Samantha.",
+               "results":[{
+                          "type":"increment",
+                          "key":"openness",
+                          "value":-1
+                          }]
+               },
+               {
+               "text":"Wishing you could talk to someone you relate to more.",
+               "results":[{
+                          "type":"increment",
+                          "key":"openness",
+                          "value":-2
+                          }]
+               }
+               ],
+    
+    "transitions":[{
+                   "key":"5"
+                   }]
+  },
+  "4-balcony":{
+    "type":"MultipleChoice",
+    "class":"TPSideMultipleChoiceQuestionViewController",
+    
+    "description":"After taking in the view you return to the party and meet another guest, named Samantha. She reveals that she is a ventriloquist from Las Vegas. You are:",
+    "bg-image":"personalityparty.bundle/samantha1-blur-bg.jpg",
+    
+    "choices":[{
+               "text":"Fascinated and excited to ask lots of questions.",
+               "results":[{
+                          "type":"increment",
+                          "key":"openness",
+                          "value":2
+                          }]
+               },
+               {
+               "text":"Intrigued, you like meeting people with unusual careers.",
+               "results":[{
+                          "type":"increment",
+                          "key":"openness",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"Intrigued, but you figure you don’t have much in common with Samantha.",
+               "results":[{
+                          "type":"increment",
+                          "key":"openness",
+                          "value":-1
+                          }]
+               },
+               {
+               "text":"Wishing you could talk to someone you relate to more.",
+               "results":[{
+                          "type":"increment",
+                          "key":"openness",
+                          "value":-2
+                          }]
+               }
+               ],
+    
+    "transitions":[{
+                   "key":"5"
+                   }]
+  },
+  "4-food":{
+    "type":"MultipleChoice",
+    "class":"TPSideMultipleChoiceQuestionViewController",
+    
+    "description":"While eating you meet another party guest, named Samantha. She reveals that she is a ventriloquist from Las Vegas. You are:",
+    "bg-image":"personalityparty.bundle/samantha1-blur-bg.jpg",
+    
+    "choices":[{
+               "text":"Fascinated and excited to ask lots of questions.",
+               "results":[{
+                          "type":"increment",
+                          "key":"openness",
+                          "value":2
+                          }]
+               },
+               {
+               "text":"Intrigued, you like meeting people with unusual careers.",
+               "results":[{
+                          "type":"increment",
+                          "key":"openness",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"Intrigued, but you figure you don’t have much in common with Samantha.",
+               "results":[{
+                          "type":"increment",
+                          "key":"openness",
+                          "value":-1
+                          }]
+               },
+               {
+               "text":"Wishing you could talk to someone you relate to more.",
+               "results":[{
+                          "type":"increment",
+                          "key":"openness",
+                          "value":-2
+                          }]
+               }
+               ],
+    
+    "transitions":[{
+                   "key":"5"
+                   }]
+  },
+  "5":{
+    "type":"MultipleChoice",
+    "class":"TPSideMultipleChoiceQuestionViewController",
+    
+    "description":"Samantha says: \"I hate how competitive show business is, I much prefer working cooperatively with people.\" You reply:",
+    "bg-image":"personalityparty.bundle/samantha2-blur-bg.jpg",
+    
+    "choices":[{
+               "text":"\"I agree. I would hate the competition too.\"",
+               "results":[{
+                          "type":"increment",
+                          "key":"agreeableness",
+                          "value":2
+                          }]
+               },
+               {
+               "text":"\"Learning to compete is important but sometimes it goes too far.\"",
+               "results":[{
+                          "type":"increment",
+                          "key":"agreeableness",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"\"I usually like competition it is a good way to challenge myself.\"",
+               "results":[{
+                          "type":"increment",
+                          "key":"agreeableness",
+                          "value":-1
+                          }]
+               },
+               {
+               "text":"\"I love to be competitive. It makes things more interesting.\"",
+               "results":[{
+                          "type":"increment",
+                          "key":"agreeableness",
+                          "value":-2
+                          }]
+               }
+               ],
+    
+    "transitions":[{
+                   "key":"6"
+                   }]
+  },
+  "6":{
+    "type":"MultipleChoice",
+    "class":"TPSideMultipleChoiceQuestionViewController",
+    
+    "description":"Samantha says: \"I also have a hard time staying organized. Sometimes, I just miss appointments completely because I can’t keep track.\" You think you yourself:",
+    "bg-image":"personalityparty.bundle/samantha3-blur-bg.jpg",
+    
+    "choices":[{
+               "text":"Wow, I would never miss appointments like that.",
+               "results":[{
+                          "type":"increment",
+                          "key":"conscientiousness",
+                          "value":2
+                          }]
+               },
+               {
+               "text":"Sticking to a schedule is hard but it’s also important to be reliable.",
+               "results":[{
+                          "type":"increment",
+                          "key":"conscientiousness",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"I can relate, I sometimes miss appointments and deadlines too.",
+               "results":[{
+                          "type":"increment",
+                          "key":"conscientiousness",
+                          "value":-1
+                          }]
+               },
+               {
+               "text":"That’s not a big deal, it’s more important to enjoy life than to be organized.",
+               "results":[{
+                          "type":"increment",
+                          "key":"conscientiousness",
+                          "value":-2
+                          }]
+               }
+               ],
+    
+    "transitions":[{
+                   "conditions":[{
+                                 "type":"comparison",
+                                 "operator":"!=",
+                                 "key":"branch1",
+                                 "value":4
+                                 }],
+                   "key":"food-2"
+                   },
+                   {
+                   "key":"7"
+                   }]
+  },
+  "food-2":{
+    "type":"MultipleChoice",
+    "class":"TPSideMultipleChoiceQuestionViewController",
+    
+    "description":"You and Samantha decide to grab a snack. You choose:",
+    "bg-image":"personalityparty.bundle/food-bg.jpg",
+    
+    "choices":[{
+               "text":"Mysterious foreign food",
+               "results":[{
+                          "type":"increment",
+                          "key":"openness",
+                          "value":2
+                          }]
+               },
+               {
+               "text":"Something unusual made by the host",
+               "results":[{
+                          "type":"increment",
+                          "key":"openness",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"Maybe a spicy dip",
+               "results":[{
+                          "type":"increment",
+                          "key":"openness",
+                          "value":-1
+                          }]
+               },
+               {
+               "text":"Comfort food",
+               "results":[{
+                          "type":"increment",
+                          "key":"openness",
+                          "value":-2
+                          }]
+               }
+               ],
+    
+    "transitions":[{
+                   "key":"7"
+                   }]
+  },
+  "7":{
+    "type":"MultipleChoice",
+    "class":"TPSideMultipleChoiceQuestionViewController",
+    
+    "description":"Samantha asks: \"So, if you could have a job that fit who you are best what would it be like?\"\nI am the kind of person who is:",
+    "bg-image":"personalityparty.bundle/samantha4-blur-bg.jpg",
+    
+    "choices":[{
+               "text":"practical & direct",
+               "results":[{
+                          "type":"increment",
+                          "key":"realistic",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"curious & analytical",
+               "results":[{
+                          "type":"increment",
+                          "key":"investigative",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"creative & intuitive",
+               "results":[{
+                          "type":"increment",
+                          "key":"artistic",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"friendly & helpful",
+               "results":[{
+                          "type":"increment",
+                          "key":"social",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"ambitious & energetic",
+               "results":[{
+                          "type":"increment",
+                          "key":"enterprising",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"well-organized & efficient",
+               "results":[{
+                          "type":"increment",
+                          "key":"conventional",
+                          "value":1
+                          }]
+               }
+               ],
+    
+    "transitions":[{
+                   "key":"8"
+                   }]
+  },
+  "8":{
+    "type":"MultipleChoice",
+    "class":"TPSideMultipleChoiceQuestionViewController",
+    
+    "description":"You reply:\n\"...and I like to\"",
+    "bg-image":"personalityparty.bundle/samantha4-blur-bg.jpg",
+    
+    "choices":[{
+               "text":"work with my hands",
+               "results":[{
+                          "type":"increment",
+                          "key":"realistic",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"explore ideas",
+               "results":[{
+                          "type":"increment",
+                          "key":"investigative",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"express myself creatively",
+               "results":[{
+                          "type":"increment",
+                          "key":"artistic",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"teach others",
+               "results":[{
+                          "type":"increment",
+                          "key":"social",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"lead others",
+               "results":[{
+                          "type":"increment",
+                          "key":"enterprising",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"organize information",
+               "results":[{
+                          "type":"increment",
+                          "key":"conventional",
+                          "value":1
+                          }]
+               }
+               ],
+    
+    "transitions":[{
+                   "conditions":[{
+                                 "type":"selector",
+                                 "selector":"hollandSixTie"
+                                 }],
+                   "key":"9-tie"
+                   },
+                   {
+                   "key":"9-notie"
+                   }]
+  },
+  "9-notie":{
+    "type":"MultipleChoice",
+    "class":"TPSideMultipleChoiceQuestionViewController",
+    
+    "description":"...So maybe a good fit would be something like a:",
+    "bg-image":"personalityparty.bundle/samantha4-blur-bg.jpg",
+    
+    "choices":[{
+               "text":"mechanic or electrician"
+               },
+               {
+               "text":"scientist or engineer"
+               },
+               {
+               "text":"artist or designer"
+               },
+               {
+               "text":"teacher or nurse"
+               },
+               {
+               "text":"salesperson or executive"
+               },
+               {
+               "text":"accountant or clerk"
+               }
+               ],
+    
+    "transitions":[{
+                   "key":"10"
+                   }]
+  },
+  "9-tie":{
+    "type":"MultipleChoice",
+    "class":"TPSideMultipleChoiceQuestionViewController",
+    
+    "description":"...So maybe a good fit would be something like a:",
+    "bg-image":"personalityparty.bundle/samantha4-blur-bg.jpg",
+    
+    "choices":[{
+               "conditions":[{
+                             "type":"selector",
+                             "selector":"hollandSixTie:",
+                             "object":{
+                                       "key":"realistic"
+                                       }
+                             }],
+               "text":"mechanic or electrician",
+               "results":[{
+                          "type":"increment",
+                          "key":"realistic",
+                          "value":1
+                          }]
+               },
+               {
+               "conditions":[{
+                             "type":"selector",
+                             "selector":"hollandSixTie:",
+                             "object":{
+                             "key":"investigative"
+                             }
+                             }],
+               "text":"scientist or engineer",
+               "results":[{
+                          "type":"increment",
+                          "key":"investigative",
+                          "value":1
+                          }]
+               },
+               {
+               "conditions":[{
+                             "type":"selector",
+                             "selector":"hollandSixTie:",
+                             "object":{
+                             "key":"artistic"
+                             }
+                             }],
+               "text":"artist or designer",
+               "results":[{
+                          "type":"increment",
+                          "key":"artistic",
+                          "value":1
+                          }]
+               },
+               {
+               "conditions":[{
+                             "type":"selector",
+                             "selector":"hollandSixTie:",
+                             "object":{
+                             "key":"social"
+                             }
+                             }],
+               "text":"teacher or nurse",
+               "results":[{
+                          "type":"increment",
+                          "key":"social",
+                          "value":1
+                          }]
+               },
+               {
+               "conditions":[{
+                             "type":"selector",
+                             "selector":"hollandSixTie:",
+                             "object":{
+                             "key":"enterprising"
+                             }
+                             }],
+               "text":"salesperson or executive",
+               "results":[{
+                          "type":"increment",
+                          "key":"enterprising",
+                          "value":1
+                          }]
+               },
+               {
+               "conditions":[{
+                             "type":"selector",
+                             "selector":"hollandSixTie:",
+                             "object":{
+                             "key":"conventional"
+                             }
+                             }],
+               "text":"accountant or clerk",
+               "results":[{
+                          "type":"increment",
+                          "key":"conventional",
+                          "value":1
+                          }]
+               }
+               ],
+    
+    "transitions":[{
+                   "key":"10"
+                   }]
+  },
+  "10":{
+    "type":"MultipleChoice",
+    "class":"TPSideMultipleChoiceQuestionViewController",
+    
+    "description":"As you are talking you find that several new people have joined the conversation and you've built up quite the audience.\n\nYou are:",
+    "bg-image":"personalityparty.bundle/audience-blur-bg.jpg",
+    
+    "choices":[{
+               "text":"In your element.",
+               "results":[{
+                          "type":"increment",
+                          "key":"extraversion",
+                          "value":2
+                          }]
+               },
+               {
+               "text":"Pleased to have new people to talk to.",
+               "results":[{
+                          "type":"increment",
+                          "key":"extraversion",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"Nervous about the crowd.",
+               "results":[{
+                          "type":"increment",
+                          "key":"extraversion",
+                          "value":-1
+                          }]
+               },
+               {
+               "text":"Looking for excuses to get out of the center of attention.",
+               "results":[{
+                          "type":"increment",
+                          "key":"extraversion",
+                          "value":-2
+                          }]
+               }
+               ],
+    
+    "transitions":[{
+                   "key":"11"
+                   }]
+  },
+  "11":{
+    "type":"MultipleChoice",
+    "class":"TPSideMultipleChoiceQuestionViewController",
+    
+    "description":"Ooooops! You lean back and knock over a glass of wine.\n\nYou:",
+    "bg-image":"personalityparty.bundle/knockoverwine-blur-bg.jpg",
+    
+    "choices":[{
+               "text":"Feel terrible and anxious about how mad the host will be. You almost don't want to tell them.",
+               "results":[{
+                          "type":"increment",
+                          "key":"neuroticism",
+                          "value":2
+                          }]
+               },
+               {
+               "text":"Think to yourself \"why does this kind of thing always happen to me?\"",
+               "results":[{
+                          "type":"increment",
+                          "key":"neuroticism",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"Feel bad but figure these things happen.",
+               "results":[{
+                          "type":"increment",
+                          "key":"neuroticism",
+                          "value":-1
+                          }]
+               },
+               {
+               "text":"Are totally calm, what's a party without a little spilled wine anyway?",
+               "results":[{
+                          "type":"increment",
+                          "key":"neuroticism",
+                          "value":-2
+                          }]
+               }
+               ],
+    
+    "transitions":[{
+                   "key":"12"
+                   }]
+  },
+  "12":{
+    "type":"MultipleChoice",
+    "class":"TPSideMultipleChoiceQuestionViewController",
+    
+    "description":"You excuse yourself to clean up the wine. While cleaning you overhear someone talking about how your co-worker saved the day at work. This makes you:",
+    "bg-image":"personalityparty.bundle/cleanupwine-blur-bg.jpg",
+    
+    "choices":[{
+               "text":"Feel bad about yourself, you know you’ll never measure up.",
+               "results":[{
+                          "type":"increment",
+                          "key":"neuroticism",
+                          "value":2
+                          }]
+               },
+               {
+               "text":"Feel disappointed it wasn’t you.",
+               "results":[{
+                          "type":"increment",
+                          "key":"neuroticism",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"Feel pretty neutral.",
+               "results":[{
+                          "type":"increment",
+                          "key":"neuroticism",
+                          "value":-1
+                          }]
+               },
+               {
+               "text":"Glad. People must be talking about you this way too sometimes.",
+               "results":[{
+                          "type":"increment",
+                          "key":"neuroticism",
+                          "value":-2
+                          }]
+               }
+               ],
+    
+    "transitions":[{
+                   "key":"13"
+                   }]
+  },
+  "13":{
+    "type":"MultipleChoice",
+    "class":"TPSideMultipleChoiceQuestionViewController",
+    
+    "description":"After cleaning up the wine, you find that the conversation has turned to a colorful debate about different religious prectices. You:",
+    "bg-image":"personalityparty.bundle/religioustalk-blur-bg.jpg",
+    
+    "choices":[{
+               "text":"Jump right in! You love hearing about people who are different from you.",
+               "results":[{
+                          "type":"increment",
+                          "key":"openness",
+                          "value":2
+                          }]
+               },
+               {
+               "text":"Are intrigued and go over to listen.",
+               "results":[{
+                          "type":"increment",
+                          "key":"openness",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"Don't care much for such topics but figure it's interesting enough to join in.",
+               "results":[{
+                          "type":"increment",
+                          "key":"openness",
+                          "value":-1
+                          }]
+               },
+               {
+               "text":"Would rather stay out of it, controversial topics are not for you.",
+               "results":[{
+                          "type":"increment",
+                          "key":"openness",
+                          "value":-2
+                          }]
+               }
+               ],
+    
+    "transitions":[{
+                   "key":"14"
+                   }]
+  },
+  "14":{
+    "type":"MultipleChoice",
+    "class":"TPSideMultipleChoiceQuestionViewController",
+    
+    "description":"Someone says: \"The way I see it, no one is looking out for me or my beliefs. I have to take care of myself so that I don’t get taken advantage of.\" you think yourself:",
+    "bg-image":"personalityparty.bundle/beliefs-blur-bg.jpg",
+    
+    "choices":[{
+               "text":"How cynical! surely people are more good natured than that.",
+               "results":[{
+                          "type":"increment",
+                          "key":"agreeableness",
+                          "value":2
+                          }]
+               },
+               {
+               "text":"This person must just be blowing off steam.",
+               "results":[{
+                          "type":"increment",
+                          "key":"agreeableness",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"You can relate to this, you often think the same thing.",
+               "results":[{
+                          "type":"increment",
+                          "key":"agreeableness",
+                          "value":-1
+                          }]
+               },
+               {
+               "text":"You agree. Anyone who doesn’t think that way is just being naive.",
+               "results":[{
+                          "type":"increment",
+                          "key":"agreeableness",
+                          "value":-2
+                          }]
+               }
+               ],
+    
+    "transitions":[{
+                   "key":"15"
+                   }]
+  },
+  "15":{
+    "type":"MultipleChoice",
+    "class":"TPSideMultipleChoiceQuestionViewController",
+    
+    "description":"Suddenly your phone rings and you have to take it. You duck into the back bedroom to take the call.\n\nSeeing the state of the room you think:",
+    "bg-image":"personalityparty.bundle/messyroom-blur-bg.jpg",
+    
+    "choices":[{
+               "text":"Wow. What a mess, my bedroom would never look like this.",
+               "results":[{
+                          "type":"increment",
+                          "key":"conscientiousness",
+                          "value":2
+                          }]
+               },
+               {
+               "text":"Must have been a busy week, no time for cleaning up.",
+               "results":[{
+                          "type":"increment",
+                          "key":"conscientiousness",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"This is probably what your room would look like as well.",
+               "results":[{
+                          "type":"increment",
+                          "key":"conscientiousness",
+                          "value":-1
+                          }]
+               },
+               {
+               "text":"Looks pretty neat to me.",
+               "results":[{
+                          "type":"increment",
+                          "key":"conscientiousness",
+                          "value":-2
+                          }]
+               }
+               ],
+    
+    "transitions":[{
+                   "key":"16"
+                   }]
+  },
+  "16":{
+    "type":"MultipleChoice",
+    "class":"TPSideMultipleChoiceQuestionViewController",
+    
+    "description":"While on the phone you get some bad news. You are:",
+    "bg-image":"personalityparty.bundle/badnews-blur-bg.jpg",
+    
+    "choices":[{
+               "text":"Very worried and anxious. Bad news effects you strongly.",
+               "results":[{
+                          "type":"increment",
+                          "key":"neuroticism",
+                          "value":2
+                          }]
+               },
+               {
+               "text":"Pretty concerned and look for a friend to help you.",
+               "results":[{
+                          "type":"increment",
+                          "key":"neuroticism",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"Somewhat concerned but ready to head back to the party.",
+               "results":[{
+                          "type":"increment",
+                          "key":"neuroticism",
+                          "value":-1
+                          }]
+               },
+               {
+               "text":"Disappointed but if you can’t control it there’s no need to get worked up.",
+               "results":[{
+                          "type":"increment",
+                          "key":"neuroticism",
+                          "value":-2
+                          }]
+               }
+               ],
+    
+    "transitions":[{
+                   "key":"17"
+                   }]
+  },
+  "17":{
+    "type":"MultiplePick",
+    "pickNum":0,
+    "class":"TPPassthroughQuestionViewController",
+    
+    "description":"You head back to the party and hang out some more.\nThen it's time to leave, so you thank the host and say good bye.",
+    "bg-image":"personalityparty.bundle/goodbye-blur-bg.jpg",
+    
+    "choices":[],
+    
+    "transitions":[{
+                   "key":"18"
+                   }]
+  },
+  "18":{
+    "type":"MultipleChoice",
+    "class":"TPSideMultipleChoiceQuestionViewController",
+    
+    "description":"After socializing at the party, you find that you are:",
+    "bg-image":"personalityparty.bundle/afterparty-blur-bg.jpg",
+    
+    "choices":[{
+               "text":"Energized and ready for the after party.",
+               "results":[{
+                          "type":"increment",
+                          "key":"extraversion",
+                          "value":2
+                          }]
+               },
+               {
+               "text":"Feeling great about meeting new friends.",
+               "results":[{
+                          "type":"increment",
+                          "key":"extraversion",
+                          "value":1
+                          }]
+               },
+               {
+               "text":"Pleased but also ready to rest.",
+               "results":[{
+                          "type":"increment",
+                          "key":"extraversion",
+                          "value":-1
+                          }]
+               },
+               {
+               "text":"Quite drained and looking forward to going home and resting.",
+               "results":[{
+                          "type":"increment",
+                          "key":"extraversion",
+                          "value":-2
+                          }]
+               }
+               ],
+    
+    "transitions":[{
+                   "conditions":[{
+                                 "type":"selector",
+                                 "selector":"bigFiveTie"
+                                 }],
+                   "key":"19"
+                   }]
+  },
+  "19":{
+    "type":"MultipleChoice",
+    "class":"TPSideMultipleChoiceQuestionViewController",
+    
+    "description":"On your way home you feel:",
+    "bg-image":"personalityparty.bundle/afterparty-blur-bg.jpg",
+    
+    "choices":[{
+               "conditions":[{
+                             "type":"selector",
+                             "selector":"bigFiveTie:",
+                             "object":{
+                             "key":"extraversion",
+                             "isHigh":true
+                             }
+                             }],
+               "text":"Happy to have met so many new people.",
+               "results":[{
+                          "type":"increment",
+                          "key":"extraversion",
+                          "value":1
+                          }]
+               },
+               {
+               "conditions":[{
+                             "type":"selector",
+                             "selector":"bigFiveTie:",
+                             "object":{
+                             "key":"extraversion",
+                             "isHigh":false
+                             }
+                             }],
+               "text":"Ready to be by yourself to recharge.",
+               "results":[{
+                          "type":"increment",
+                          "key":"extraversion",
+                          "value":-1
+                          }]
+               },
+               {
+               "conditions":[{
+                             "type":"selector",
+                             "selector":"bigFiveTie:",
+                             "object":{
+                             "key":"openness",
+                             "isHigh":true
+                             }
+                             }],
+               "text":"Excited to have heard new ideas from unusual people.",
+               "results":[{
+                          "type":"increment",
+                          "key":"openness",
+                          "value":1
+                          }]
+               },
+               {
+               "conditions":[{
+                             "type":"selector",
+                             "selector":"bigFiveTie:",
+                             "object":{
+                             "key":"openness",
+                             "isHigh":false
+                             }
+                             }],
+               "text":"Glad you didn’t get roped in to any controversial topics.",
+               "results":[{
+                          "type":"increment",
+                          "key":"openness",
+                          "value":-1
+                          }]
+               },
+               {
+               "conditions":[{
+                             "type":"selector",
+                             "selector":"bigFiveTie:",
+                             "object":{
+                             "key":"conscientiousness",
+                             "isHigh":true
+                             }
+                             }],
+               "text":"Pleased that you were a conscientious guest.",
+               "results":[{
+                          "type":"increment",
+                          "key":"conscientiousness",
+                          "value":1
+                          }]
+               },
+               {
+               "conditions":[{
+                             "type":"selector",
+                             "selector":"bigFiveTie:",
+                             "object":{
+                             "key":"conscientiousness",
+                             "isHigh":false
+                             }
+                             }],
+               "text":"Carefree and ready to do the next fun thing.",
+               "results":[{
+                          "type":"increment",
+                          "key":"conscientiousness",
+                          "value":-1
+                          }]
+               },
+               {
+               "conditions":[{
+                             "type":"selector",
+                             "selector":"bigFiveTie:",
+                             "object":{
+                             "key":"agreeableness",
+                             "isHigh":true
+                             }
+                             }],
+               "text":"Pleased that the other people at the party seemed to like you.",
+               "results":[{
+                          "type":"increment",
+                          "key":"agreeableness",
+                          "value":1
+                          }]
+               },
+               {
+               "conditions":[{
+                             "type":"selector",
+                             "selector":"bigFiveTie:",
+                             "object":{
+                             "key":"agreeableness",
+                             "isHigh":false
+                             }
+                             }],
+               "text":"Disappointed that you didn’t get into more debates.",
+               "results":[{
+                          "type":"increment",
+                          "key":"agreeableness",
+                          "value":-1
+                          }]
+               },
+               {
+               "conditions":[{
+                             "type":"selector",
+                             "selector":"bigFiveTie:",
+                             "object":{
+                             "key":"neuroticism",
+                             "isHigh":true
+                             }
+                             }],
+               "text":"Worried that you made a bad impression by spilling the wine.",
+               "results":[{
+                          "type":"increment",
+                          "key":"neuroticism",
+                          "value":1
+                          }]
+               },
+               {
+               "conditions":[{
+                             "type":"selector",
+                             "selector":"bigFiveTie:",
+                             "object":{
+                             "key":"neuroticism",
+                             "isHigh":false
+                             }
+                             }],
+               "text":"Calm and relaxed.",
+               "results":[{
+                          "type":"increment",
+                          "key":"neuroticism",
+                          "value":-1
+                          }]
+               }
+               ],
+    
+    "transitions":[]
+  }
+}
