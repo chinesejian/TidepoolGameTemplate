@@ -1,13 +1,28 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
 platform :ios, '7.0'
 
-# GameAbstract
-pod 'MSKit', :git=>'git@github.com:e7mac/MSKit'
-pod 'TPServiceFramework', :git=>'git@github.com:tidepool/TPServiceFramework'
-pod 'TPGameFramework', :git=>'git@github.com:tidepool/TPGameFramework'
-pod 'CrashlyticsFramework', '~> 2.2.0'
+pod 'FormatterKit', :inhibit_warnings => true
+pod 'JDStatusBarNotification'
+pod 'BTBadgeView'
+pod 'JBChartView'
+pod 'Helpshift'
+pod 'JGActionSheet'
+pod 'TPKeyboardAvoiding'
+pod 'DCIntrospect-ARC'
+pod 'Leanplum-iOS-SDK'
+pod 'RQShineLabel'
+pod 'Branch', :git => 'https://github.com/BranchMetrics/Branch-iOS-SDK.git', :commit => '15524b7b6ac7107dc3bc91037e2c3fa54ad694fb'
+
+pod 'MSKit', :git=>'https://github.com/e7mac/MSKit', :inhibit_warnings => true
+pod 'EasyDimensions', :git=>'https://github.com/ravikvss/EasyDimensions', :inhibit_warnings => true
+pod 'AttributedMarkdown', :git=>'https://github.com/tidepool/AttributedMarkdown', :inhibit_warnings => true
+pod 'APAddressBook', :inhibit_warnings => true
+
+pod 'TPToolkit', :path=>'../../TPToolkit/TPToolkit.podspec'
+pod 'TPServiceFramework', :path=>'../../TPServiceFramework/TPServiceFramework.podspec'
+pod 'TPGameFramework', :path=>'../../TPGameFramework/TPGameFramework.podspec'
+pod 'TPActivityFramework', :path=>'../../TPActivityFramework/TPActivityFramework.podspec'
+pod 'TPCaseTheJoint', :path=>'../../TPCaseTheJoint/TPCaseTheJoint.podspec'
 
 pod 'TP{{Project}}', :path=>'../TP{{Project}}.podspec'
-
-target 'TP{{Project}}Tests', :exclusive => true do
-  pod 'Kiwi/XCTest', '2.2.4'
-end

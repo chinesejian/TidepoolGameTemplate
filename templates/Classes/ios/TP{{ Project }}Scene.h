@@ -7,20 +7,10 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
+#import "TPGameScene.h"
 
 @class TP{{Project}}Scene;
 
-@protocol TP{{Project}}SceneDelegate <NSObject>
-
-- (void){{project}}SceneLose:(TP{{Project}}Scene *)scene;
-- (void){{project}}SceneWin:(TP{{Project}}Scene *)scene completion:(dispatch_block_t)completion;
-- (void)logEvent:(NSDictionary *)properties;
-- (void){{project}}Scene:(TP{{Project}}Scene *)scene didWinPoints:(int)points;
-
-@end
-
-@interface TP{{Project}}Scene : SKScene
-
-  @property (nonatomic, weak) id<TP{{Project}}SceneDelegate> {{project}}delegate;
+@interface TP{{Project}}Scene : TPGameScene
 
 @end

@@ -11,7 +11,7 @@
 
 static const NSUInteger kRoundPerLevel = 1;
 
-@interface TP{{Project}}StageViewController () <TP{{Project}}SceneDelegate>
+@interface TP{{Project}}StageViewController ()
 
 @property (nonatomic) NSUInteger round;
 @property (nonatomic, weak) TP{{Project}}Scene *{{project}}Scene;
@@ -61,18 +61,18 @@ static const NSUInteger kRoundPerLevel = 1;
   return YES;
 }
 
-#pragma mark - TP{{Project}}SceneDelegate
+#pragma mark - TPGameSceneDelegate
 
-- (void){{project}}SceneLose:(TP{{Project}}Scene *)scene
+- (void)gameSceneLose:(TPGameScene *)scene
 {
   [self showGraphicForResultCorrect:NO completion:^{
+    self.paused = YES;
     [self stageOverSuccess:NO];
   }];
 }
 
-- (void){{project}}SceneWin:(TP{{Project}}Scene *)scene completion:(dispatch_block_t)completion
+- (void)gameSceneWin:(TPGameScene *)scene completion:(dispatch_block_t)completion
 {
-  self.gameVC.score += 100;
   [self showGraphicForResultCorrect:YES completion:^{
     if (++self.round == kRoundPerLevel) {
       self.round = 0;
@@ -83,11 +83,6 @@ static const NSUInteger kRoundPerLevel = 1;
     }
     if (completion) completion();
   }];
-}
-
-- (void)logEvent:(NSDictionary *)properties
-{
-  [self.gameVC logEventWithProperties:properties];
 }
 
 - (BOOL)shouldAutorotate
