@@ -22,7 +22,5 @@ pod 'APAddressBook', :inhibit_warnings => true
 pod 'TPToolkit', :path=>'../../TPToolkit/TPToolkit.podspec'
 pod 'TPServiceFramework', :path=>'../../TPServiceFramework/TPServiceFramework.podspec'
 pod 'TPGameFramework', :path=>'../../TPGameFramework/TPGameFramework.podspec'
-pod 'TPActivityFramework', :path=>'../../TPActivityFramework/TPActivityFramework.podspec'
-pod 'TPCaseTheJoint', :path=>'../../TPCaseTheJoint/TPCaseTheJoint.podspec'
 
 pod 'TP{{Project}}', :path=>'../TP{{Project}}.podspec'

@@ -24,21 +24,9 @@
 
 - (void)configureStage:(TP{{Project}}StageViewController *)stage forLevel:(int)level
 {
+  [super configureStage:stage forLevel:level];
   [stage configureScene];
 }
 
-- (NSArray *)howToPlayInstructions
-{
-  return @[
-           @{
-             @"image":@"{{project.toLowerCase()}}.bundle/howtoplay-1.png",
-             @"text":@"Repeat the pattern by tapping the same circles in the same order."
-             },
-           @{
-             @"image":@"{{project.toLowerCase()}}.bundle/howtoplay-2.png",
-             @"text":@"Repeat the pattern by tapping the same circles in the same order."
-             },
-           ];
-}
 
 @end

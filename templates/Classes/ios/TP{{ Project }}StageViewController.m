@@ -51,7 +51,7 @@ static const NSUInteger kRoundPerLevel = 1;
     TP{{Project}}Scene *scene = [TP{{Project}}Scene sceneWithSize:skView.bounds.size];
     scene.scaleMode = SKSceneScaleModeResizeFill;
     [skView presentScene:_{{project}}Scene = scene];
-    scene.{{project}}delegate = self;
+    scene.gameSceneDelegate = self;
     [self configureScene];
   }
 }
